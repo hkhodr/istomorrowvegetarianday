@@ -8,8 +8,7 @@ const tomorrow = new Date();
 tomorrow.setDate(today.getDate()+1);
 
 let day = weekday[tomorrow.getDay()];
-var time_difference = tomorrow.getTime() - veggyday.getTime();   
-var days_difference = Math.ceil (time_difference / (1000 * 60 * 60 * 24));  
+var days_difference = tomorrow.getDate() - veggyday.getDate();   
 
 if(!possibledays.includes(day))
     document.getElementById('answer').innerHTML = "NO";
